@@ -15,4 +15,5 @@ for line in f.readlines():
     # 将每一行的字符串变成一个list，删除空格元素,通过join将list连接成一个字符串写入文件
     new_line = '=='.join(list(filter(is_not_empty, line.split(' '))))
     out.write(new_line)
-
+f.close()
+out.close()
